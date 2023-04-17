@@ -3,6 +3,7 @@ import { useHistory } from "react-router";
 import { addToCart } from "../slices/cartSlice";
 import { useGetAllProductsQuery } from "../slices/productsApi";
 import "./Home.css";
+
 const Home = () => {
   const { items: products, status } = useSelector((state) => state.products);
   const dispatch = useDispatch();
@@ -29,7 +30,7 @@ const Home = () => {
               data?.map((product) => (
                 <div key={product.id} className="product">
                   <h3>{product.name}</h3>
-                  <img src={product.image} alt={product.name} />
+                  <img src={product.img} alt={product.name} />
                   <div className="details">
                     <span>{product.desc}</span>
                     <span className="price">${product.price}</span>
