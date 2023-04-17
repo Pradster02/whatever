@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
-
+import logo from "../logo.png";
+import './Navbar.css';
 const NavBar = () => {
   const { cartTotalQuantity } = useSelector((state) => state.cart);
   return (
     <nav className="nav-bar">
       <Link to="/">
-        <h2>OnlineShop</h2>
+        <h2><img src={logo} alt="logo" className="logo" /></h2>
       </Link>
       <Link to="/Login">
         <h2>Login</h2>

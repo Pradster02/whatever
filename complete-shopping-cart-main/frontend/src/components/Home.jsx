@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router";
 import { addToCart } from "../slices/cartSlice";
 import { useGetAllProductsQuery } from "../slices/productsApi";
-
+import "./Home.css";
 const Home = () => {
   const { items: products, status } = useSelector((state) => state.products);
   const dispatch = useDispatch();
@@ -20,7 +20,10 @@ const Home = () => {
     <div className="home-container">
       {status === "success" ? (
         <>
-          <h2>New Arrivals</h2>
+        <div className="title">
+          <h2>Menu List</h2>
+          <div className="underline"></div>
+        </div>
           <div className="products">
             {data &&
               data?.map((product) => (

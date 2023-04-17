@@ -1,0 +1,20 @@
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .title h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  .title .underline {
+    height: 3px;
+    width: 70px;
+    background-color: #ffba08;
+    margin-bottom: 20px;
+  }
