@@ -6,6 +6,8 @@ import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import NotFound from "./components/NotFound";
 import Cart from "./components/Cart";
+import LoginPage from "./components/Login";
+import RegisterPage from "./components/Register";
 
 import "react-toastify/dist/ReactToastify.css";
 
@@ -18,6 +20,8 @@ function App() {
         <div className="content-container">
           <Switch>
             <Route path="/cart" component={Cart} />
+            <Route path="/Login" component={LoginPage} />
+            <Route path="/Register" component={RegisterPage} />
             <Route path="/not-found" component={NotFound} />
             <Route path="/" exact component={Home} />
             <Redirect to="/not-found" />

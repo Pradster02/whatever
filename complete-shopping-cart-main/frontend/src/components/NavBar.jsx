@@ -8,8 +8,11 @@ const NavBar = () => {
       <Link to="/">
         <h2>OnlineShop</h2>
       </Link>
-      <Link to="/">
-        <h2>Login/Register</h2>
+      <Link to="/Login">
+        <h2>Login</h2>
+      </Link>
+      <Link to="/Register">
+        <h2>Register</h2>
       </Link>
       <Link to="/cart">
         <div className="nav-bag">
